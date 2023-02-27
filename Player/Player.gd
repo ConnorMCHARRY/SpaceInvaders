@@ -2,12 +2,7 @@ extends KinematicBody2D
 
 var movement_speed = 200
 var bulletSource = preload ("res://Bullet/Bullet.tscn")
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process(true)
 	set_physics_process(true)
