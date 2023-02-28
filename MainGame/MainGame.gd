@@ -1,6 +1,6 @@
 extends Control
 
-export(int) var countdownMax
+export (int) var countdownMax
 var currentTimer
 
 func _ready():
@@ -13,4 +13,5 @@ func _ready():
 		currentTimer = currentTimer - 1
 		print(currentTimer)
 	print("Game Over")
+	get_tree().change_scene("res://Menu/Menu.tscn")
 
