@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://automaticFiring.gd" type="Script" id=1]
+[ext_resource path="res://Menu/Return to Main Menu.gd" type="Script" id=2]
 
 [node name="Options" type="Control"]
 anchor_right = 1.0
@@ -30,5 +31,7 @@ margin_bottom = 27.0
 margin_top = 44.0
 margin_right = 150.0
 margin_bottom = 64.0
+text = "Return to Main Menu"
+script = ExtResource( 2 )
 
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/automaticFiring" to="VBoxContainer/HBoxContainer/automaticFiring" method="_on_automaticFiring_pressed"]
+[connection signal="pressed" from="VBoxContainer/Return to Main Menu" to="VBoxContainer/Return to Main Menu" method="_on_Return_to_Main_Menu_pressed"]
