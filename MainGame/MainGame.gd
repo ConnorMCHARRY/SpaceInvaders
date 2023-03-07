@@ -10,6 +10,7 @@ func _ready():
 	while currentTimer > 0:
 		$HUD/Countdown.text = str(currentTimer)
 		yield(get_tree().create_timer(1.0), "timeout")
+		$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
 		currentTimer = currentTimer - 1
 		print(currentTimer)
 	print("Game Over")
