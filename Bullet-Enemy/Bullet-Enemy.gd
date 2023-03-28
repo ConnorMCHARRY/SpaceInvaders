@@ -9,11 +9,11 @@ func _ready():
 func _physics_process(delta):
 	var collidedObject = move_and_collide(Vector2(0, +speed*delta*0.4))
 	if (collidedObject):
-		print(collidedObject.collider.name)
+		
 		if "Enemy" in collidedObject.collider.name:
-			collidedObject.get_collider().queue_free()
-			GlobalVariables.scoringInformation["currentScore"] +=10
-		queue_free()
-		GlobalVariables.enemyBulletInstanceCount -= 1
-		print("Enemy Bullets: ", GlobalVariables.enemyBulletInstanceCount)
-
+			pass
+			
+		else:
+			queue_free()
+			GlobalVariables.enemyBulletInstanceCount += 1
+			print("Enemy Bullets: ", GlobalVariables.enemyBulletInstanceCount)
