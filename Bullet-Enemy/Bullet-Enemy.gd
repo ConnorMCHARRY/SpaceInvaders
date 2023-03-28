@@ -15,5 +15,5 @@ func _physics_process(delta):
 			
 		else:
 			queue_free()
-			GlobalVariables.enemyBulletInstanceCount += 1
+			GlobalVariables.enemyBulletInstanceCount -= 1
 			print("Enemy Bullets: ", GlobalVariables.enemyBulletInstanceCount)
