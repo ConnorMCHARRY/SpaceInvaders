@@ -2,15 +2,7 @@
 
 This games at its core is a classic game of space invaders but with a twist. This version will introduce item blocks, think of it like mario kart abilities.
 
-## User Management
-Users will be able to login, log out, reset their passwords, and edit their details.
 
-Users will need to store:
-- Name
-- DOB
-- Hashed password
-- Access Level (user vs Administrator)
-- Status (active or disabled)
 
 # Project Plan
 
