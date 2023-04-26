@@ -25,5 +25,8 @@ gantt
     Design: 24-04-23, 05-05-23
 
     section Enemy shooting
-    Enemy shooting: 08-05-23, 12-05-23
+    Enemy shooting: 01-05-23, 08-05-23
+
+    section Player death
+    Player death: 06-05-23, 15-05-23
 ```
