@@ -7,7 +7,7 @@ processA[Item Blocks spawn] -->
 decisionA{Player collide with item block}
 decisionA -- no --> decisionA
 decisionA -- yes --> decisionB{player has 2 items}
-decisionB -- yes --> decisionB
+decisionB -- yes --> decisionA
 decisionB -- no --> OutputA
 OutputA[Item Generation]
 OutputA --> decisionC{Player use item}
