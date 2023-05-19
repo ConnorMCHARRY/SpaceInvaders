@@ -5,6 +5,7 @@ var currentTimer
 
 func _ready():
 	currentTimer = countdownMax
+	GlobalVariables.enemyBulletInstanceCount = 0
 	$HUD/Countdown.text = str(currentTimer)
 	
 	while currentTimer > 0:
